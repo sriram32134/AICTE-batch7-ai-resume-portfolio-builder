@@ -1,0 +1,20 @@
+<style>
+    .resume-container { display: flex; background: white; color: #333; min-height: 500px; font-family: sans-serif; }
+    .sidebar { width: 30%; background: #2c3e50; color: white; padding: 20px; }
+    .main { width: 70%; padding: 20px; }
+    .section-title { color: #2c3e50; border-bottom: 2px solid #2c3e50; margin-bottom: 10px; font-weight: bold; }
+</style>
+<div class="resume-container">
+    <div class="sidebar">
+        <h2>{{name}}</h2>
+        <p>{{role}}</p>
+        <hr>
+        <h4>Contact</h4><p>{{contact}}</p>
+        <h4>Skills</h4><p>{{skills}}</p>
+    </div>
+    <div class="main">
+        <div class="section-title">Summary</div><p>{{summary}}</p>
+        <div class="section-title">Experience</div><p>{{experience}}</p>
+        <div class="section-title">Projects</div><p>{{projects}}</p>
+    </div>
+</div>

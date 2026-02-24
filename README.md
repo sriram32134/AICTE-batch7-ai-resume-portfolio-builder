@@ -5,8 +5,8 @@
 This project focuses on automation, personalization, and clean document design to improve job and internship opportunities.
 
 ---
-### 🔧 Installation
-
+Installation
+```
 git clone https://github.com/sriram32134/ai-resume-portfolio-builder.git
 cd ai-resume-portfolio-builder
 

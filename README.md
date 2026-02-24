@@ -8,11 +8,13 @@
 
 ### Installation & Execution
 
-1. Clone the repository
+1. Clone the repository :
+
 git clone https://github.com/sriram32134/ai-resume-portfolio-builder.git
 cd ai-resume-portfolio-builder
 
-2. Create and activate a virtual environment
+2. Create and activate a virtual environment :
+
 python -m venv venv
 
 Windows:
@@ -33,6 +35,7 @@ macOS / Linux:
 export GEMINI_API_KEY="your_api_key_here"
 
 5. Run the application
+
 streamlit run app.py
 
 The application will open automatically in your browser.

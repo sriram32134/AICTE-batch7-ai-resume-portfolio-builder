@@ -1,157 +1,166 @@
-# 🚀 AI Career Pro
+🚀 AI Career Pro
 
-**AI Career Pro** is an all-in-one, AI-powered career toolkit designed to help students and professionals create high-impact job application materials. Powered by **Google Gemini AI**, the application automatically generates professional resumes, tailored cover letters, and premium portfolio websites using a single set of user details.
+AI-Powered Resume, Cover Letter & Portfolio Builder
 
-This project focuses on automation, personalization, and clean document design to improve job and internship opportunities.
+AI Career Pro is an all-in-one career toolkit that uses Google Gemini AI to automatically generate professional resumes, customized cover letters, and modern portfolio websites from a single set of user details.
 
----
+The goal of this project is to reduce manual effort, improve personalization, and deliver clean, job-ready documents for students and professionals.
 
-## ✨ Key Features
+🏁 How to Run the Application
 
-### 1️⃣ Master Details Integration
-- Enter personal information, contact details, skills, and target role **once**
-- Reused across Resume, Cover Letter, and Portfolio
-- Upload a profile photo for modern resume templates and portfolio websites
+Follow these steps to set up and run AI Career Pro locally.
 
----
+✅ Prerequisites
 
-### 2️⃣ AI Resume Generator
-- **Dynamic sections**: Add unlimited Experience, Education, and Project entries
-- **AI-powered descriptions**:
-  - Leave descriptions empty and let AI generate professional bullet points
-- **Premium resume templates**:
-  - Executive Elite  
-  - Modern Centered  
-  - Professional  
-  - Classic  
-  - Minimal  
-  - Geometric Grid
-- Export **print-ready PDF resumes**
+Python 3.10 or higher
 
----
+Google Gemini API Key
 
-### 3️⃣ AI Portfolio Builder
-- Generate a complete personal portfolio website in seconds
-- Multiple modern design themes:
-  - Glassmorphism
-  - Cyber Terminal
-  - Earthy Minimalist
-- Automatically includes:
-  - Education
-  - Projects
-  - Skills
-  - Social links
+Git (optional, but recommended)
 
----
+✅ Installation & Setup
 
-### 4️⃣ Cover Letter Pro
-- Generates customized cover letters based on:
-  - Company name
-  - Job title
-- Uses your background and skills to create a persuasive, professional narrative
-- Eliminates manual drafting
+Clone the Repository:
+git clone https://github.com/sriram32134/ai-resume-portfolio-builder.git
+cd ai-resume-portfolio-builder
 
----
+Create and Activate Virtual Environment:
+python -m venv venv
+  Windows:
+  .\venv\Scripts\activate
+  macOS / Linux:
+  source venv/bin/activate
 
-## 🛠️ Tech Stack
+Install Dependencies:
+  pip install -r requirements.txt
 
-- **Frontend & UI**: Streamlit  
-- **AI Model**: Google Gemini (google-genai SDK)  
-- **PDF Generation**: fpdf2  
-- **Backend**: Python  
-- **Deployment**: Streamlit Cloud  
+Set Gemini API Key:
+  setx GEMINI_API_KEY "your_api_key_here"
 
----
+Run the Application:
+  streamlit run app.py
 
-## 📁 Project Structure
+📌 About the Application
+
+AI Career Pro allows users to enter their details once and reuse them across:
+
+AI-generated resumes
+
+Customized cover letters
+
+Fully responsive portfolio websites
+
+This ensures consistency, speed, and professional quality.
+
+✨ Key Features
+1️⃣ Master Details (Single Source of Truth)
+
+Enter personal details, skills, and career goals one time
+
+Automatically reused across:
+  Resume
+  Cover Letter
+  Portfolio
+
+Upload a profile photo for:
+
+Modern resume templates
+Portfolio websites
+
+2️⃣ AI Resume Generator
+🔹 Dynamic Sections
+
+  Add unlimited:
+
+  Experience
+  Education
+  Projects
+
+🔹 AI-Powered Descriptions
+  Leave description fields empty
+  Gemini AI generates professional, ATS-friendly bullet points
+
+🔹 Premium Resume Templates
+
+  Executive Elite
+  Modern Centered
+  Professional
+  Classic
+  Minimal
+
+  Geometric Grid
+
+🔹 Export Options
+
+Print-ready PDF resumes
+Clean formatting (no markdown symbols)
+
+
+3️⃣ AI Portfolio Builder
+
+Generates a complete personal portfolio website in seconds
+
+Multiple modern design themes:
+
+Glassmorphism
+
+Automatically Includes
+
+  About section
+  Education
+  Projects
+  Skills
+
+Social & portfolio links
+
+4️⃣ Cover Letter Pro
+
+Generates custom cover letters based on:
+
+Company name
+
+Job title
+
+Uses your:
+  Experience
+  Skills
+  Target role
+
+Eliminates repetitive manual drafting
+
+🛠️ Tech Stack
+
+Frontend / UI: Streamlit
+AI Model: Google Gemini (google-genai SDK)
+Backend: Python
+PDF Generation: fpdf2
+Deployment: Streamlit Cloud
+
+Cloud
+
+📁 Project Structure
+
 ai-resume-portfolio-builder/
 │
-├── app.py # Main Streamlit app
-├── sections/ # Feature modules
-│ ├── resume.py
-│ ├── cover_letter.py
-│ └── portfolio.py
+├── app.py                 # Main Streamlit application
 │
-├── utils/ # Core logic
-│ ├── llm.py # Gemini AI integration
-│ ├── generate_pdf.py # PDF generation
-│ ├── sanitize.py
-│ └── portfolio_templates.py
+├── sections/              # Feature modules
+│   ├── resume.py
+│   ├── cover_letter.py
+│   └── portfolio.py
 │
-├── templates/ # HTML/CSS templates
-│ ├── resume_.html
-│ └── portfolio_.html
+├── utils/                 # Core logic
+│   ├── llm.py             # Gemini AI integration
+│   ├── generate_pdf.py    # PDF generation logic
+│   ├── sanitize.py
+│   └── portfolio_templates.py
+│
+├── templates/             # HTML/CSS templates
+│   ├── resume_.html
+│   └── portfolio_.html
 │
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 
----
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Python **3.10 or higher**
-- Google **Gemini API Key**
-
----
-
-### 🔧 Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/sriram32134/ai-resume-portfolio-builder.git
-cd ai-resume-portfolio-builder
-
-Create and activate virtual environment
-python -m venv venv
-# Windows
-.\venv\Scripts\activate
-# macOS / Linux
-source venv/bin/activate
-
-Install dependencies
-pip install -r requirements.txt
-
-Set environment variable
-GEMINI_API_KEY=your_api_key_here
-
-Run the application
-streamlit run app.py
-
-How to Enter Details (Best Results)
-
-1️⃣ Master Details
-
-Email | Phone | Location
-Enter separated by pipes:
-email@example.com | +91XXXXXXXXXX | City, Country
-
-Target Role
-Be specific (e.g., Full-Stack Developer, Data Analyst)
-
-Brief Experience
-2–3 sentences describing focus areas and strengths
-
-2️⃣ Education & Experience
-
-Use + button to add entries
-Experience:
-Fill Role & Company
-Leave description empty for AI-generated content
-
-Education:
-Degree
-Institution
-Percentage / CGPA
-Year
-
-3️⃣ Projects
-Enter project name (e.g., Fake News Detection System)
-Provide a one-line description
-AI expands it into professional resume-ready content
-
-Best Practices
-AI avoids markdown stars to ensure clean PDF rendering
-Use Download PDF for print-ready resumes
-Portfolio links format:

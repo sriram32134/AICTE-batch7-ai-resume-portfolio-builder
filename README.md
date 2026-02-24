@@ -7,26 +7,26 @@ This project focuses on automation, personalization, and clean document design t
 ---
 ### 🔧 Installation
 
-1. **Clone the repository**
-```bash
 git clone https://github.com/sriram32134/ai-resume-portfolio-builder.git
 cd ai-resume-portfolio-builder
 
-Create and activate virtual environment
+# Create and activate virtual environment
 python -m venv venv
+
 # Windows
 .\venv\Scripts\activate
+
 # macOS / Linux
 source venv/bin/activate
 
-Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-Set environment variable
+# Set environment variable
 GEMINI_API_KEY=your_api_key_here
 
-Run the application
-streamlit run app.py 
+# Run the application
+streamlit run app.py
 
 ## ✨ Key Features
 

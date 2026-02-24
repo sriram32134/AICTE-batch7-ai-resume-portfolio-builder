@@ -8,7 +8,7 @@ This project focuses on automation, personalization, and clean document design t
 ### 🔧 Installation
 
 1. **Clone the repository**
-
+```bash
 git clone https://github.com/sriram32134/ai-resume-portfolio-builder.git
 cd ai-resume-portfolio-builder
 
